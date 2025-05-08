@@ -7,6 +7,27 @@
     <title></title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .semafaro {
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid #505050;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            flex-direction: column;
+        }
+
+        .redondo {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #505050;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -40,16 +61,21 @@
             <div class="text">
                 <h1>Verificador de Idade</h1>
             </div>
-            <div class="form">
-                <input type="text" name="nome" id="temperatura" placeholder="Digite a palavra">
-                <button onclick="verificar()">Verificar</button>
-                <div id="resultado"></div>
-
+            <div class="semafaro">
+                <div id="vermelho" class="redondo"></div>
+                <div id="amarelo" class="redondo"></div>
+                <div id="verde" class="redondo"></div>
             </div>
+            <button onclick="vermelhoLigado()">Vermelho</button>
+            <button onclick="amareloLigado()">Amarelo</button>
+            <button onclick="verdeLigado()">Verde</button>
+            <button onclick="mudarCor()">Todos</button>
+
+
         </div>
     </main>
 
-    <script src="/scripts/ex8.js"></script>
+    <script src="/scripts/ex9.js"></script>
 
 </body>
 

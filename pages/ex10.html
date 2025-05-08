@@ -7,6 +7,27 @@
     <title></title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .semafaro {
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid #505050;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            flex-direction: column;
+        }
+
+        .redondo {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #505050;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -41,15 +62,18 @@
                 <h1>Verificador de Idade</h1>
             </div>
             <div class="form">
-                <input type="text" name="nome" id="temperatura" placeholder="Digite a palavra">
-                <button onclick="verificar()">Verificar</button>
+                <input type="number" name="numero" id="temperature" placeholder="Digite a temperatura em C° ou F°">
+                <button onclick="transformarEmCelsius()">Transformar em Celcius</button>
+                <button onclick="transformarEmFahrenheit()">Transformar em fahrenheit</button>
+
                 <div id="resultado"></div>
 
             </div>
+
         </div>
     </main>
 
-    <script src="/scripts/ex8.js"></script>
+    <script src="/scripts/ex10.js"></script>
 
 </body>
 
