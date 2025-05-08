@@ -44,7 +44,7 @@ header {
 
 .cabeca_item {
     width: 80%;
-    padding: 8px 10px;
+    padding: 6px 10px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -57,7 +57,7 @@ header {
 .cabeca_item h1 {
     font-size: 12px;
     font-weight: 400;
-    color: #dedede;
+    color: white    ;
 }
 
 .cabeca_item i {
@@ -91,8 +91,9 @@ header {
 }
 
 .itens h2 {
-    font-size: 11px;
-    color: #686868;
+    font-size: 10px;
+    color: #6f6f6f;
+    font-weight: 400;
 }
 
 .links {
