@@ -162,6 +162,17 @@ main {
     gap: 10px;
 }
 
+
+#cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
 /* Card */
 
 .card {
