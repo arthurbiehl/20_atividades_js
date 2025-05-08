@@ -19,13 +19,18 @@ body {
 
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 180px;
+    height: 100vh; /* altura total da tela */
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
     border-right: 1px solid rgb(80, 80, 80);
-    gap: 10px   ;
+    gap: 10px;
+    z-index: 1000; /* para garantir que fique sobre o conteúdo, se necessário */
 }
 
 .cabeca {
@@ -128,6 +133,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 180px;
 }
 
 .container {
