@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .semafaro {
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            border: 1px solid #505050;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            flex-direction: column;
+        }
+
+        .redondo {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #505050;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="cabeca">
+            <div class="cabeca_item">
+                <i class="fa-solid fa-cloud"></i>
+                <h1>Trabalho</h1>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="itens">
+                <h2>Menu</h2>
+                <div class="links">
+                    <a href="../index.html">
+                        <i class="fa-sharp fa-solid fa-house"></i>
+                        Início
+                    </a>
+                    <a href="../projetos.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        Projetos
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="text">
+                <h1>Jogo de Adivinhação 1 a 100</h1>
+            </div>
+            <div class="form">
+
+                <input type="number" id="palpite" placeholder="Digite seu palpite">
+                <button onclick="verificarPalpite()">Tentar</button>
+
+                <div id="mensagem"></div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../scripts/ex19.js"></script>
+
+</body>
+
+</html>
